@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 14 - Navegación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mi Sitio</div>
+            <button id="nav-toggle">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li class="submenu">
+                    <a href="#">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Diseño Gráfico</a></li>
+                        <li><a href="#">Consultoría</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenido a Mi Sitio</h1>
+        <p>Explora nuestras secciones desde la barra de navegación.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio - Olga Lucia Muñoz - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById("nav-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-open");
+        });
+    </script>
+
+</body>
+</html>
